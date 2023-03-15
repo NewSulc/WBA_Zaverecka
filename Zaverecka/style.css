@@ -57,18 +57,31 @@
             height: 100%;
             width: 100%;
             height: 100vh;
-            background-image: url(../Images/landingImage.png);
+            background-image: url(../Images/airImg.jpg);
             background-repeat: no-repeat;
             background-position: center;
             display: flex;
             justify-content: center;
             align-items: center;
+            background-position: 30% 75%;
         }
 
-        .techtrees>.imgCard:first-child {
-            
+        .techtrees>.imgCard:nth-child(2) {
+            background-image: url(../Images/armyImg.jpg);
+            background-position: 45% 0%;
+        }
+
+        .techtrees>.imgCard:nth-child(3) {
+            background-image: url(../Images/navyImg.jpg);
+            background-position: 50% 50%;
         }
 
         .techtrees>.imgCard>h2{
             font-size: 75px;
+            transform: translateY(400%);
+        }
+
+        .techtrees>.imgCard:nth-child(2)>h2{
+            font-size: 75px;
+            transform: translateY(-400%);
         }
