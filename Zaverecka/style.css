@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+        body {
+            width: 100vw;
+            height: 200vh;
+            overflow-x: hidden;
+            color: white;
+            font-family: 'Inter', sans-serif;
+        }
+
+        .mainNav {
+            position: fixed;
+            top: 3%;
+            left: 30%;
+            height: 8%;
+            width: 40%;
+            background-color: #ffffff1a;
+            backdrop-filter: blur(25px) brightness(100%);
+            border-radius: 15px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .mainNav>.logo {
+            height: 80%;
+            width: auto;
+            object-fit: cover;
+        }
+
+        .landing {
+            width: 100%;
+            height: 100vh;
+            background-image: url(../Images/landingImage.png);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: 900;
+            font-size: 120px;
+            text-align: center;
+        }
+
+        .landing>h1 {
+            transform: translateY(-20%);
+        }
+
+        .techtrees {
+            height: 50%;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+        }
+
+        .techtrees>.imgCard {
+            height: 100%;
+            width: 100%;
+            height: 100vh;
+            background-image: url(../Images/landingImage.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .techtrees>.imgCard:first-child {
+            
+        }
+
+        .techtrees>.imgCard>h2{
+            font-size: 75px;
+        }
