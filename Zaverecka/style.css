@@ -1,101 +1,119 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 
-        body {
-            width: 100vw;
-            height: 200vh;
-            overflow-x: hidden;
-            color: white;
-            font-family: 'Inter', sans-serif;
-        }
+body {
+    width: 100vw;
+    height: 200vh;
+    overflow-x: hidden;
+    color: white;
+    font-family: 'Inter', sans-serif;
+}
 
-        .mainNav {
-            position: fixed;
-            top: 3%;
-            left: 50%;
-            transform: translate(-50%, 0);
-            height: 8%;
-            width: 60%;
-            background-color: #ffffff1a;
-            backdrop-filter: blur(10px);
-            border-radius: 15px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            z-index: 5;
-        }
+.mainNav {
+    position: fixed;
+    top: 3%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    height: 8%;
+    width: 60%;
+    background-color: #ffffff1a;
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    z-index: 5;
+}
 
-        .mainNav>.logo {
-            height: 80%;
-            width: auto;
-            object-fit: cover;
-        }
+.mainNav>.logo {
+    height: 80%;
+    width: auto;
+    object-fit: cover;
+}
 
-        .landing {
-            width: 100%;
-            height: 100vh;
-            background-image: url(Images/landingImage.png);
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-weight: 900;
-            font-size: 120px;
-            text-align: center;
-        }
+.mainNav>.navSection {
+    width: 40%;
+    height: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
 
-        .landing>h1 {
-            transform: translateY(-20%);
-        }
+.mainNav>.navSection>a{
+    color: black;
+    font-size: 20px;
+    font-weight: 900;
+    text-decoration: none;
+}
 
-        .techtrees {
-            height: 50%;
-            width: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: row;
-        }
+.landing {
+    width: 100%;
+    height: 100vh;
+    background-image: url(Images/landingImage.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 900;
+    font-size: 120px;
+    text-align: center;
+}
 
-        .techtrees>.imgCard {
-            height: 100%;
-            width: 100%;
-            height: 100vh;
-            background-image: url(Images/airImg.jpg);
-            background-repeat: no-repeat;
-            background-size: cover;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background-position: 40%;
-            transition: 1s;
-        }
+.landing>h1 {
+    transform: translateY(-20%);
+}
 
-        .techtrees:hover>.imgCard:hover{
-            width: 80%;
-            transition: 1s;
-        }
+.techtrees {
+    height: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
 
-        .techtrees:hover>.imgCard:not(:hover){
-            width: 10%;
-            transition: 1s;
-        }
+.techtrees>.imgCard {
+    height: 100%;
+    width: 100%;
+    height: 100vh;
+    background-image: url(Images/airImg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-position: 40%;
+    transition: 1s;
+}
 
-        .techtrees:hover>.imgCard:not(:hover)>h2{
-            color: rgba(255, 255, 255, 0);
-            transition: 0.5s;
-        }
+.techtrees:hover>.imgCard:hover {
+    width: 80%;
+    transition: 1s;
+}
 
-        .techtrees>.imgCard:nth-child(2) {
-            background-image: url(Images/armyImg.jpg);
-            background-position: 50%;
-        }
+.techtrees:hover>.imgCard:not(:hover) {
+    width: 10%;
+    transition: 1s;
+}
 
-        .techtrees>.imgCard:nth-child(3) {
-            background-image: url(Images/navyImg.jpg);
-            background-position: 40%;
-        }
+.techtrees:hover>.imgCard:not(:hover)>h2 {
+    color: rgba(255, 255, 255, 0);
+    transition: 0.5s;
+}
 
-        .techtrees>.imgCard>h2{
-            font-size: 75px;
-            transform: translateY(350%);
-            transition: 0.5s;
-        }
+.techtrees>.imgCard:nth-child(2) {
+    background-image: url(Images/armyImg.jpg);
+    background-position: 50%;
+}
+
+.techtrees>.imgCard:nth-child(3) {
+    background-image: url(Images/navyImg.jpg);
+    background-position: 40%;
+}
+
+.techtrees>.imgCard>h2 {
+    font-size: 75px;
+    transform: translateY(350%);
+    transition: 0.5s;
+}
