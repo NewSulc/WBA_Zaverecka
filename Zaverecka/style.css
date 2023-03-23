@@ -11,15 +11,17 @@
         .mainNav {
             position: fixed;
             top: 3%;
-            left: 30%;
+            left: 50%;
+            transform: translate(-50%, 0);
             height: 8%;
-            width: 40%;
+            width: 60%;
             background-color: #ffffff1a;
-            backdrop-filter: blur(25px) brightness(100%);
+            backdrop-filter: blur(10px);
             border-radius: 15px;
             display: flex;
             justify-content: center;
             align-items: center;
+            z-index: 5;
         }
 
         .mainNav>.logo {
@@ -31,7 +33,7 @@
         .landing {
             width: 100%;
             height: 100vh;
-            background-image: url(../Images/landingImage.png);
+            background-image: url(Images/landingImage.png);
             display: flex;
             justify-content: center;
             align-items: center;
@@ -57,31 +59,43 @@
             height: 100%;
             width: 100%;
             height: 100vh;
-            background-image: url(../Images/airImg.jpg);
+            background-image: url(Images/airImg.jpg);
             background-repeat: no-repeat;
-            background-position: center;
+            background-size: cover;
             display: flex;
             justify-content: center;
             align-items: center;
-            background-position: 30% 75%;
+            background-position: 40%;
+            transition: 1s;
+        }
+
+        .techtrees:hover>.imgCard:hover{
+            width: 80%;
+            transition: 1s;
+        }
+
+        .techtrees:hover>.imgCard:not(:hover){
+            width: 10%;
+            transition: 1s;
+        }
+
+        .techtrees:hover>.imgCard:not(:hover)>h2{
+            color: rgba(255, 255, 255, 0);
+            transition: 0.5s;
         }
 
         .techtrees>.imgCard:nth-child(2) {
-            background-image: url(../Images/armyImg.jpg);
-            background-position: 45% 0%;
+            background-image: url(Images/armyImg.jpg);
+            background-position: 50%;
         }
 
         .techtrees>.imgCard:nth-child(3) {
-            background-image: url(../Images/navyImg.jpg);
-            background-position: 50% 50%;
+            background-image: url(Images/navyImg.jpg);
+            background-position: 40%;
         }
 
         .techtrees>.imgCard>h2{
             font-size: 75px;
-            transform: translateY(400%);
-        }
-
-        .techtrees>.imgCard:nth-child(2)>h2{
-            font-size: 75px;
-            transform: translateY(-400%);
+            transform: translateY(350%);
+            transition: 0.5s;
         }
