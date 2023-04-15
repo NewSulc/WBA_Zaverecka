@@ -120,6 +120,7 @@ body::-webkit-scrollbar-thumb {
     justify-content: space-between;
     align-items: center;
     flex-direction: row;
+    border: none;
 }
 
 .techtrees>.imgCard {
@@ -140,12 +141,14 @@ body::-webkit-scrollbar-thumb {
 
 .techtrees:hover>.imgCard {
     width: 10%;
+    filter: grayscale(1);
     transition: 1.2s;
 }
 
 .techtrees:hover>.imgCard:hover {
     width: 80%;
     transition: 0.4s;
+    filter: grayscale(0);
 }
 
 .techtrees:hover>.imgCard:not(:hover)>h2 {
