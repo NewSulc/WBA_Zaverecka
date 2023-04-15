@@ -145,7 +145,7 @@ body::-webkit-scrollbar-thumb {
 
 .techtrees:hover>.imgCard:hover {
     width: 80%;
-    transition: 1s;
+    transition: 0.4s;
 }
 
 .techtrees:hover>.imgCard:not(:hover)>h2 {
