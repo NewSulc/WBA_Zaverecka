@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 
-*{
+* {
     color: white;
     text-decoration: none;
 }
@@ -41,7 +41,7 @@ body::-webkit-scrollbar-thumb {
     z-index: 5;
 }
 
-.mainNav>a{
+.mainNav>a {
     height: 80%;
     width: auto;
 }
@@ -95,7 +95,15 @@ body::-webkit-scrollbar-thumb {
     align-items: end;
 }
 
-.container>.nation>h2{
+.container>.ground {
+    background-image: url(Images/placeholder_ground.png);
+}
+
+.container>.navy {
+    background-image: url(Images/placholder_navy.png);
+}
+
+.container>.nation>h2 {
     font-size: 5rem;
     font-weight: 900;
     margin-bottom: 1rem;
