@@ -12,12 +12,13 @@
 </head>
 
 <body>
+
     <nav class="mainNav">
         <section class="navSection">
             <a href="https://warthunder.com/en/media/">MEDIA</a>
             <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">DEVELOPMENT</a>
         </section>
-        <img class="logo" src="Images/logo.png" alt="">
+        <a href="index.html"><img class="logo" src="Images/logo.png" alt=""></a>
         <section class="navSection">
             <a href="https://store.steampowered.com/app/236390/War_Thunder/">DOWNLOAD</a>
             <a href="https://ssps.cajthaml.eu/2-wba/page/zaverecna-prace">ABOUT</a>
@@ -27,21 +28,36 @@
     <main>
         <article class="landing">
             <h1>War<br>Thunder</h1>
+            <section class="container">
+                <a href="https://warthunder.com/en/media/">
+                    <p>DOWNLOAD</p>
+                </a>
+                <div id="arrowDown" onclick="scrollToBottom()">↓</div>
+            </section>
         </article>
         <article class="techtrees">
-            <section class="imgCard">
+            <a href="ground.html"  class="imgCard">
                 <h2>AIR</h2>
-            </section>
+            </a>
 
-            <section class="imgCard">
+            <a href="ground.html" class="imgCard">
                 <h2>GROUND</h2>
-            </section>
+            </a>
 
-            <section class="imgCard">
+            <a href="ground.html" class="imgCard">
                 <h2>NAVY</h2>
-            </section>
+            </a>
         </article>
     </main>
+
+    <script>
+        function scrollToBottom() {
+            window.scrollTo({
+                top: document.body.scrollHeight,
+                behavior: 'smooth'
+            });
+        }
+    </script>
 </body>
 
 </html>
