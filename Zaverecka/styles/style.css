@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 
-*{
+a {
     color: white;
     text-decoration: none;
 }
 
 body {
-    width: 100vw;
+    width: 100%;
     height: auto;
     overflow-x: hidden;
     color: white;
@@ -23,52 +23,13 @@ body::-webkit-scrollbar-thumb {
     background: linear-gradient(transparent, #201f1f 10% 90%, transparent);
 }
 
-.mainNav {
-    position: fixed;
-    top: 3%;
-    left: 50%;
-    transform: translate(-50%, 0);
-    height: 8%;
-    width: 60%;
-    background-color: #ffffff1a;
-    backdrop-filter: blur(10px);
-    border-radius: 15px;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    z-index: 5;
-}
-
-.mainNav>a{
-    height: 80%;
-    width: auto;
-}
-
-.mainNav>a>.logo {
-    height: 100%;
-    width: auto;
-    object-fit: cover;
-}
-
-.mainNav>.navSection {
-    width: 40%;
-    height: 80%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
-.mainNav>.navSection>a {
-    font-size: 20px;
-    font-weight: 900;
-}
-
 .landing {
     height: 100vh;
-    background-image: url(Images/landingImage.png);
+    margin: 0;
+    background-image: url(../Images/landingImage.png);
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: 50% 50%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -106,6 +67,12 @@ body::-webkit-scrollbar-thumb {
     justify-content: center;
     align-items: center;
     text-decoration: none;
+    transition: 1s;
+}
+
+.landing>.container>a:hover {
+    transition: 1s;
+    transform: scale(1.1);
 }
 
 #arrowDown {
@@ -127,7 +94,7 @@ body::-webkit-scrollbar-thumb {
     height: 100vh;
     width: 100%;
     position: relative;
-    background-image: url(Images/airImg.jpg);
+    background-image: url(../Images/airImg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
@@ -149,6 +116,7 @@ body::-webkit-scrollbar-thumb {
     width: 80%;
     transition: 0.4s;
     filter: grayscale(0);
+    position: relative;
 }
 
 .techtrees:hover>.imgCard:not(:hover)>h2 {
@@ -157,17 +125,77 @@ body::-webkit-scrollbar-thumb {
 }
 
 .techtrees>.imgCard:nth-child(2) {
-    background-image: url(Images/armyImg.jpg);
+    background-image: url(../Images/armyImg.jpg);
     background-position: 50%;
 }
 
 .techtrees>.imgCard:nth-child(3) {
-    background-image: url(Images/navyImg.jpg);
+    background-image: url(../Images/navyImg.jpg);
     background-position: 40%;
 }
 
 .techtrees>.imgCard>h2 {
     font-size: 75px;
-    transform: translateY(350%);
     transition: 0.5s;
+}
+
+@media (max-width: 1000px) {
+    .landing>.container>a {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 900px) {
+    .landing {
+        font-size: 5rem;
+    }
+
+    .landing>h1 {
+        transform: translateY(-20%);
+    }
+
+    .landing>.container {
+        font-size: 3rem;
+    }
+
+    .landing>.container>a {
+        font-size: 1rem;
+    }
+
+    .techtrees {
+        flex-direction: column;
+    }
+
+    .techtrees>.imgCard>h2 {
+        font-size: 50px;
+        transform: translateY(350%);
+        transition: 0.5s;
+        background-color: #ffffff1a;
+        backdrop-filter: blur(10px);
+        box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.205);
+        border-radius: 2rem;
+        padding: 2rem;
+        position: absolute;
+        top: 15rem;
+    }
+
+    #arrowDown {
+        display: none;
+    }
+}
+
+@media (max-width: 500px) {
+    .landing>h1 {
+        font-size: 3rem;
+    }
+
+    .landing>.container>a {
+        height: 3rem;
+        width: 10rem;
+        font-size: 0.8rem;
+    }
+
+    #arrowDown {
+        display: none;
+    }
 }

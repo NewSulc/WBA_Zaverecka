@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+*{
+    color: white;
+    text-decoration: none;
+}
+
+body {
+    width: 100%;
+    height: auto;
+    overflow-x: hidden;
+    background-color: #564B54;
+    font-family: 'Inter', sans-serif;
+}
+
+body::-webkit-scrollbar {
+    width: 5px;
+    background-color: #F5F5F5;
+}
+
+body::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: linear-gradient(transparent, #201f1f 10% 90%, transparent);
+}
+
+main{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 10rem;
+}
+
+main>h1{
+    font-size: 5rem;
+}
+
+main>.container{
+    margin-top: 5rem;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5rem;
+}
+
+main>.container>.part{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+}
+
+main>.container>.part:nth-child(2n){
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+}
+
+.part>.textImg{
+    width: auto;
+    height: 100%;
+    min-width: 18rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.part:nth-child(2n)>.textImg{
+    justify-content: flex-end;
+}
+
+.part>.textImg>img{
+    width: 75%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 1rem;
+}
+
+.part>.text{
+    width: 50%;
+    height: 100%;
+    min-width: 18rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+}
+
+@media (max-width: 1200px) {
+    main>h1{
+        font-size: 3rem;
+    }
+
+    main>.container>.part{
+        flex-direction: column;
+        gap: 2rem;
+    }
+    
+    main>.container>.part:nth-child(2n){
+        flex-direction: column;
+    }
+    
+    .part>.textImg{
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .part>.textImg>img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 1rem;
+    }
+    
+    .part>.text{
+        width: 100%;
+        text-align: center;
+        font-size: 1.5em;
+    }
+}
+
+@media (max-width: 450px) {
+    main>h1{
+        font-size: 2rem;
+    }
+
+    .part>.text{
+        width: 100%;
+        text-align: center;
+        font-size: 1em;
+    }
+}

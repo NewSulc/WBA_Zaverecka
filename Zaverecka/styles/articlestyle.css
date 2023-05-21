@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+body {
+    width: 100%;
+    height: auto;
+    min-height: 100vh;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+    overflow-x: hidden;
+    color: white;
+    font-family: 'Inter', sans-serif;
+    background: linear-gradient(180deg, #564B54, #201F1F);
+}
+
+body::-webkit-scrollbar {
+    width: 5px;
+    background-color: #F5F5F5;
+}
+
+body::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: linear-gradient(transparent, #201f1f 10% 90%, transparent);
+}
+
+main {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+main>h1{
+    font-size: 6rem;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+main>.imgMain{
+    margin-top: 3rem;
+    border-radius: 2rem;
+    width: 60%;
+    aspect-ratio: 38/17;
+    overflow: hidden;
+}
+
+main>.imgMain>img{
+    width: 100%;
+    border: inherit;
+}
+
+main>.videoMain{
+    margin-top: 3rem;
+    border-radius: 2rem;
+    width: 40%;
+    aspect-ratio: 16/9;
+}
+
+main>.txt{
+    margin-top: 3rem;
+    width: 50%;
+    font-size: 1.5rem;
+}
+main>.txt>p{
+    margin-top: 1rem;
+}
+
+main>.txt>h2{
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+    font-weight: 700;
+}
+
+main>.txt a{
+    text-decoration: underline;
+}
+
+.txt>ul{
+    list-style-type: circle;
+}
+
+.txt>ul>li{
+    margin-left: 3rem;
+    margin-bottom: 0.5rem;
+}
+
+@media (max-width: 1000px) {
+    main>.txt{
+        width: 80%;
+    }
+    main>h1{
+        font-size: 4rem;
+    }
+    main>.txt>h2{
+        font-size: 2rem;
+    }
+    main>.videoMain{
+        width: 60%;
+    }
+}
+
+@media (max-width: 900px) {
+    body{
+        padding: 3rem 0;
+    }
+    main>.imgMain{
+        border-radius: 1rem;
+        width: 75%;
+    }
+}
+
+@media (max-width: 550px) {
+    body{
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+    main>.txt{
+        width: 80%;
+    }
+    main>h1{
+        font-size: 2rem;
+    }
+    main>.txt>h2{
+        font-size: 1.2rem;
+    }
+    p{
+        font-size: 1.1rem;
+    }
+    main>.videoMain, .imgMain{
+        width: 80%;
+    }
+    
+    .txt>ul>li{
+        font-size: 1.1rem;
+    }
+}

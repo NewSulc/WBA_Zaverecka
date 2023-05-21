@@ -7,36 +7,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>War Thunder - Game</title>
     <link rel="stylesheet" href="https://api-ssps.cajthaml.eu/file/global/css/reset_ld9mrCCm.css">
-    <link rel="stylesheet" href="style.css">
-
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/navbar.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 </head>
 
 <body>
 
-    <nav class="mainNav">
-        <section class="navSection">
-            <a href="media.html">MEDIA</a>
-            <a href="development.html">DEVELOPMENT</a>
-        </section>
-        <a href="index.html"><img class="logo" src="Images/logo.png" alt=""></a>
-        <section class="navSection">
-            <a href="download.html">DOWNLOAD</a>
-            <a href="about.html">ABOUT</a>
-        </section>
-    </nav>
+    <header>
+        <nav class="mainNav">
+            <section class="navSection">
+                <a href="media.html">MEDIA</a>
+                <a href="development.html">DEVELOPMENT</a>
+            </section>
+            <a href="index.html"><img class="logo" src="Images/logo.png" alt=""></a>
+            <section class="navSection">
+                <a href="download.html">DOWNLOAD</a>
+                <a href="about.html">ABOUT</a>
+            </section>
+        </nav>
+
+        <nav class="smallNav">
+            <section id="hamburger" class="dropdown">
+                <div class="icon"></div>
+            </section>
+            <ul id="dropdownMenu">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="media.html">MEDIA</a></li>
+                <li><a href="development.html">DEVELOPMENT</a></li>
+                <li><a href="download.html">DOWNLOAD</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+            </ul>
+        </nav>
+    </header>
 
     <main>
-        <article class="landing">
+        <article id="land" class="landing">
             <h1>War<br>Thunder</h1>
             <section class="container">
                 <a href="download.html">
                     <p>DOWNLOAD</p>
                 </a>
-                <div id="arrowDown" onclick="scrollToBottom()">↓</div>
+                <div id="arrowDown">↓</div>
             </section>
         </article>
         <article class="techtrees">
-            <a href="air.html"  class="imgCard">
+            <a href="air.html" class="imgCard">
                 <h2>AIR</h2>
             </a>
 
@@ -50,14 +66,9 @@
         </article>
     </main>
 
-    <script>
-        function scrollToBottom() {
-            window.scrollTo({
-                top: document.body.scrollHeight,
-                behavior: 'smooth'
-            });
-        }
-    </script>
+    <script src="scripts/dropdown.js"></script>
+
+    <script src="scripts/index.js"></script>
 </body>
 
 </html>

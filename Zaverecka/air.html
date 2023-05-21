@@ -7,34 +7,80 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ground vehicles</title>
     <link rel="stylesheet" href="https://api-ssps.cajthaml.eu/file/global/css/reset_ld9mrCCm.css">
-    <link rel="stylesheet" href="types.css">
+    <link rel="stylesheet" href="styles/types.css">
+    <link rel="stylesheet" href="styles/navbar.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 </head>
 
 <body>
-    <nav class="mainNav">
-        <section class="navSection">
-            <a href="https://warthunder.com/en/media/">MEDIA</a>
-            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">DEVELOPMENT</a>
-        </section>
-        <a href="index.html"><img class="logo" src="Images/logo.png" alt=""></a>
-        <section class="navSection">
-            <a href="https://store.steampowered.com/app/236390/War_Thunder/">DOWNLOAD</a>
-            <a href="https://ssps.cajthaml.eu/2-wba/page/zaverecna-prace">ABOUT</a>
-        </section>
-    </nav>
+    <header>
+        <nav class="mainNav">
+            <section class="navSection">
+                <a href="media.html">MEDIA</a>
+                <a href="development.html">DEVELOPMENT</a>
+            </section>
+            <a href="index.html"><img class="logo" src="Images/logo.png" alt=""></a>
+            <section class="navSection">
+                <a href="download.html">DOWNLOAD</a>
+                <a href="about.html">ABOUT</a>
+            </section>
+        </nav>
 
-    <div class="container">
-        <a class="nation" href="https://wiki.warthunder.com/Aviation"><h2>USA</h2></a>
-        <a class="nation" href="https://wiki.warthunder.com/Aviation"><h2>GERMANY</h2></a>
-        <a class="nation" href="https://wiki.warthunder.com/Aviation"><h2>USSR</h2></a>
-        <a class="nation" href="https://wiki.warthunder.com/Aviation"><h2>BRI'ISH</h2></a>
-        <a class="nation" href="https://wiki.warthunder.com/Aviation"><h2>JAPAN</h2></a>
-        <a class="nation" href="https://wiki.warthunder.com/Aviation"><h2>CHINA</h2></a>
-        <a class="nation" href="https://wiki.warthunder.com/Aviation"><h2>ITALY</h2></a>
-        <a class="nation" href="https://wiki.warthunder.com/Aviation"><h2>FRANCE</h2></a>
-        <a class="nation" href="https://wiki.warthunder.com/Aviation"><h2>SWEDEN</h2></a>
-        <a class="nation" href="https://wiki.warthunder.com/Aviation"><h2>ISRAEL</h2></a>
-    </div>
+        <nav class="smallNav">
+            <section id="hamburger" class="dropdown">
+                <div class="icon"></div>
+            </section>
+            <ul id="dropdownMenu">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="media.html">MEDIA</a></li>
+                <li><a href="development.html">DEVELOPMENT</a></li>
+                <li><a href="download.html">DOWNLOAD</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="container">
+            <a class="nation air" href="https://wiki.warthunder.com/Category:USA_aircraft">
+                <h2>USA</h2>
+            </a>
+            <a class="nation air" href="https://wiki.warthunder.com/Category:Germany_aircraft">
+                <h2>GERMANY</h2>
+            </a>
+            <a class="nation air" href="https://wiki.warthunder.com/Category:USSR_aircraft">
+                <h2>USSR</h2>
+            </a>
+            <a class="nation air" href="https://wiki.warthunder.com/Category:Britain_aircraft">
+                <h2>BRI'ISH</h2>
+            </a>
+            <a class="nation air" href="https://wiki.warthunder.com/Category:Japan_aircraft">
+                <h2>JAPAN</h2>
+            </a>
+            <a class="nation air" href="https://wiki.warthunder.com/Category:China_aircraft">
+                <h2>CHINA</h2>
+            </a>
+            <a class="nation air" href="https://wiki.warthunder.com/Category:Italy_aircraft">
+                <h2>ITALY</h2>
+            </a>
+            <a class="nation air" href="https://wiki.warthunder.com/Category:France_aircraft">
+                <h2>FRANCE</h2>
+            </a>
+            <a class="nation air" href="https://wiki.warthunder.com/Category:Sweden_aircraft">
+                <h2>SWEDEN</h2>
+            </a>
+            <a class="nation air" href="https://wiki.warthunder.com/Category:Israel_aircraft">
+                <h2>ISRAEL</h2>
+            </a>
+        </section>
+    </main>
+    <footer>
+        <p>Gaijoob Enterteiment 2023</p>
+        <section>
+            <a href="https://www.instagram.com/warthunder/?hl=cs">Instagram</a><a href="https://www.youtube.com/channel/UCPZsNertSS82YCT2qX9-wHA">YouTube</a><a href="https://www.facebook.com/WarThunder/?locale=cs_CZ">Facebook</a>
+        </section>
+    </footer>
+    <script src="scripts/animation.js"></script>
+    <script src="scripts/dropdown.js"></script>
 </body>
 
 </html>

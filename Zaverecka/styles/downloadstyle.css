@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+* {
+    color: white;
+    text-decoration: none;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+    color: white;
+    font-family: 'Inter', sans-serif;
+    background: linear-gradient(180deg, #564B54 0%, #201F1F 100%);
+    display: flex;
+    align-items: center;
+}
+
+main {
+    width: 100%;
+    height: auto;
+    margin-top: 4%;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    display: grid;
+    justify-items: center;
+}
+
+main>a {
+    display: block;
+    background-color: red;
+    width: 40%;
+    height: 7rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 1rem;
+    transition: 0.8s ease-in-out;
+}
+
+main>a:hover {
+    transform: scale(1.05);
+    transition: 0.8s ease-in-out;
+}
+
+main>a>section {
+    height: 80%;
+    aspect-ratio: 1/1;
+    margin-left: 1rem;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
+
+main>a>h2 {
+    width: 100%;
+    font-size: 2.2rem;
+    text-align: center;
+}
+
+#exe {
+    background: #DD3835;
+}
+
+#exe>section {
+    background-image: url(../Images/arrows.png);
+}
+
+#steam {
+    background: linear-gradient(180deg, #07172A 0%, #0B88B9 100%);
+}
+
+#steam>section {
+    background-image: url(../Images/steam.png);
+}   
+
+#xbox {
+    background: #107C10;
+}
+
+#xbox>section {
+    background-image: url(../Images/xbox.png);
+}
+
+#ps {
+    background: linear-gradient(92deg, #0280B7 0%, #003B80 100%);
+}
+
+#ps>section {
+    background-image: url(../Images/ps.png);
+}
+
+@media (max-width: 950px) {
+    main>a>h2{
+        font-size: 1.5rem;
+    }
+}
+@media (max-width: 750px) {
+    main>a{
+        width: 80%;
+    }
+}
+@media (max-width: 400px) {
+    main>a>section{
+        display: none;
+    }
+}
